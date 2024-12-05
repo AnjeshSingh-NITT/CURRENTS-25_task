@@ -25,7 +25,7 @@ To get started with this project, follow these steps:
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/username/project-name.git
+   git clone https://github.com/AnjeshSingh-NITT/CURRENTS-25_task.git
 2. Open the index.html file in your browser.
    
 ## Usage
