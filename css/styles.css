@@ -27,8 +27,11 @@ header {
 .header-left{
     color: white;
     text-decoration: none;
+    transition: color 0.8s ease; 
     &:hover {
-        text-decoration: underline;
+        color: #49d7ec; 
+        
+        transform: scale(1.1);
     }
 }
 nav ul {
