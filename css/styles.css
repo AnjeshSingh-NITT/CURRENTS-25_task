@@ -1,0 +1,247 @@
+
+
+.hide-mobile {
+    display: none;
+}
+
+body {
+    background-color: #030030;
+    background-image: url('Desktop.svg');
+    /* background-size: cover; */
+    background-position:right top;
+    background-repeat: no-repeat;
+    margin: 0;
+    color: white;
+    text-decoration: none;
+}
+
+.wrap {
+    margin:2em;
+}
+
+header {
+    display: flex;
+    justify-content:space-between;
+    font-family: outfit;
+}
+.header-left{
+    color: white;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+nav ul {
+    font-family: roboto;
+    background: #181635;
+    opacity: 0.95;
+    position:fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    margin: 0;
+    list-style: none;
+    width: 40%;
+    text-align: right;
+    padding: 2em;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out;
+    border-radius: 10px;
+    
+
+    li {
+        margin:1em 0;
+
+        &:nth-of-type(1) {
+            margin: 0 0 2.5em 0;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: color 0.3s ease;      
+
+            &:hover {
+                text-decoration: underline;
+                color: #D52092; 
+            }
+        }
+
+        
+    }
+}
+
+.open {
+    transform: translateX(0%);
+}
+
+/* .container{
+    background-image: url('eee.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center left 20%; 
+    
+    
+} */
+
+h1 {
+    font-family: outfit;
+    font-size:2.1rem;
+    margin-top: 2em;
+    text-align: left;
+    font-weight: bolder;
+}
+
+p {
+    text-align: left;
+    font-family: roboto;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 2em 4em 0 0;
+}
+
+
+.cta-buttons{
+    font-family: outfit;
+    display: flex;
+    text-align: center;
+    gap: 2em; 
+    font-size: 1rem;
+    
+}
+.cta-buttons a {
+    display: flex; /* Ensures the buttons are treated as blocks */
+    text-align: center; /* Centers the text inside */
+    padding: 0.5em 1em; /* Adjust as needed */
+    font-size: 1rem; /* Keeps text size consistent */
+    border-radius: 2em; /* Optional for rounded corners */
+    width: auto;
+    height: auto;
+    box-sizing: border-box; /* Includes padding and border in dimensions */
+    text-decoration: none;
+    align-items: center;
+    margin-top: 3em;
+}
+a.primary-cta {   
+    background: rgba(255, 255, 255, 0.5); 
+    color: black;
+    
+}
+a.ghost-cta {
+    border: 1.5px solid white;
+    color: white;
+}
+
+
+@media (min-width: 798px) {
+    body {
+        background-color: #030030;
+        background-image: url('Desktop.svg');
+        background-size: cover;
+        background-position:top;
+        background-repeat: no-repeat;
+        margin: 0;
+        color: white;
+        text-decoration: none;
+    }
+  .wrap {
+    margin: 0 auto;
+    padding: 0 2em;
+    max-width: 1200px;
+} 
+    
+    .hide-desktop {
+        display: none;
+    }
+
+    .hide-mobile {
+        display: block;
+    }
+
+    header {
+        position: fixed;
+        top: 1em;
+      }
+    .header-left{
+        font-size: 1.1rem;
+    }
+    nav ul {
+        background: none;
+        display: flex;
+        padding:0;
+        margin: 0;
+        gap: 2em;
+        height: auto;
+        width: auto;
+        transform: translateX(0%);
+        
+        li a {
+            font-size: 1rem;
+            padding: 0;
+            margin-right: 2em;
+        }
+    }
+    h1,p{
+        margin:0 0 0 0;
+        padding: 0 0 0 0;
+    }
+    h1 {
+        font-family: 'Outfit', sans-serif;
+        font-size: 9rem;
+        color: white;
+        padding-top: 1em;
+        text-align:center;
+    }
+    
+    p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.6rem;
+        color: white;
+        text-align:center;
+        text-indent: -12em;
+        padding-top: 0;
+        margin-top:0;
+        padding-bottom: 1em;    
+        font-weight: lighter;
+    }
+    .cta-buttons{
+        padding:0 6em;
+        margin-left:0em;
+        gap:2em;
+        
+    }
+    .cta-buttons a {
+        display: flex; /* Ensures the buttons are treated as blocks */
+        text-align: center; /* Centers the text inside */
+        
+        font-size: 1.5rem; /* Keeps text size consistent */
+        border-radius: 2em; /* Optional for rounded corners */
+        width: auto;
+        height: auto;
+        box-sizing: border-box; /* Includes padding and border in dimensions */
+        text-decoration: none;
+        align-items: center;
+        margin-top: 1em;
+    }
+    a.primary-cta {   
+        background: rgba(255, 255, 255, 0.5); 
+        color: black;
+        &:hover {
+            transform: scale(1.2);
+            color:#650643;
+            transition: 0.2s ease;
+        }
+    }
+    a.ghost-cta {
+        border: 1.5px solid white;
+        color: white;
+        &:hover {
+            transform: scale(1.2);
+            color:#D52092;
+            transition: 0.2s ease;
+        }
+    }
+}

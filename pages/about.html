@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Currents</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/about.css">
+</head>
+<body>
+    
+    <div class="wrap">
+        <header>
+                <a class="header-left" href="about.html">
+                    CURRENTS
+                </a>
+
+            <nav class="navBar">
+                <a href="#" class="menu-open hide-desktop">
+                    <img src="../css/hamMenu.svg" alt="Open menu">
+                </a>
+                <ul>
+                    <li class="hide-desktop">
+                        <a href="#" class="menu-close">
+                            <img src="../css/close.svg" alt="Close menu">
+                        </a>
+                    </li>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="#">guest lectures</a></li>
+                    <li><a href="#">core teams</a></li>
+                    <li><a href="#">accommodation</a></li>
+                    <li><a href="contact.html">contact us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h1>CURRENTS '25</h1>
+            <p class="subhead">
+                The Electrical and Electronics Engineering Association, better known as EEE-A, 
+                is the brainchild of the Department of Electrical and Electronics Engineering. 
+                The EEE-A acts as a bridge between the students and the department. It offers a                 
+                plethora of activities throughout the year that encourage students to gain an 
+                in-depth understanding of the field.  These include guest lectures, workshops, 
+                events and EEE-A’s annual technical symposium, CURRENTS.
+
+                CURRENTS was first incepted in 1990s as a humble affair, by a group of 
+                enthusiastic members of the EEE Association. It has on offer, a plethora of 
+                innovative events, state-of-the-art workshops, the best guest lectures from the 
+                most revered academicians and industrialists, and its bi-annual magazine: TRONICALS.
+            </p>
+            
+        </main>
+
+        <!-- <div class="eee-container">
+            <div class="eee">
+                <img src="eee.svg" alt="eee-A logo">
+                <div class="inner-circle"></div>
+                <div class="outer-circle"></div>
+            </div>
+        </div> -->
+    </div>
+
+    <script>
+
+        const menu = document.querySelector('nav ul');
+        const menuBtn = document.querySelector('.menu-open');
+        const closeBtn = document.querySelector('.menu-close');
+
+        menuBtn.addEventListener('click', () => {
+            menu.classList.add('open')
+        })
+
+        closeBtn.addEventListener('click', () => {
+            menu.classList.remove('open')
+        })
+
+    </script>
+</body>
+</html>
