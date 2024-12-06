@@ -1,0 +1,235 @@
+
+
+.hide-mobile {
+    display: none;
+}
+
+body {
+    background-color: #030030;
+    background-image: url('Desktop.svg');
+    /* background-size: cover; */
+    background-position:right top;
+    background-repeat: no-repeat;
+    margin: 0;
+    color: white;
+    text-decoration: none;
+}
+
+.wrap {
+    margin:2em;
+}
+
+header {
+    display: flex;
+    justify-content:space-between;
+    font-family: outfit;
+}
+.header-left{
+    color: white;
+    text-decoration: none;
+    transition: color 0.8s ease; 
+    &:hover {
+        color: #49d7ec; 
+        
+        transform: scale(1.1);
+    }
+}
+nav ul {
+    font-family: roboto;
+    background: #181635;
+    opacity: 0.95;
+    position:fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    margin: 0;
+    list-style: none;
+    width: 40%;
+    text-align: right;
+    padding: 2em;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out;
+    border-radius: 10px;
+    
+
+    li {
+        margin:1em 0;
+
+        &:nth-of-type(1) {
+            margin: 0 0 2.5em 0;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: color 0.3s ease;      
+
+            &:hover {
+                text-decoration: underline;
+                color: #D52092; 
+            }
+        }
+
+        
+    }
+}
+
+.open {
+    transform: translateX(0%);
+}
+
+/* .container{
+    background-image: url('eee.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center left 20%; 
+    
+    
+} */
+
+
+@media (min-width: 798px) {
+    body {
+        background-color: #030030;
+        background-image: url('Desktop.svg');
+        background-size: cover;
+        background-position:top;
+        background-repeat: no-repeat;
+        margin: 0;
+        color: white;
+        text-decoration: none;
+    }
+  .wrap {
+    margin: 0 auto;
+    padding: 0 2em;
+    max-width: 1200px;
+} 
+    
+    .hide-desktop {
+        display: none;
+    }
+
+    .hide-mobile {
+        display: block;
+    }
+
+    header {
+        position: fixed;
+        top: 1em;
+      }
+    .header-left{
+        font-size: 1.1rem;
+    }
+    nav ul {
+        background: none;
+        display: flex;
+        padding:0;
+        margin: 0;
+        gap: 2em;
+        height: auto;
+        width: auto;
+        transform: translateX(0%);
+        
+        li a {
+            font-size: 1rem;
+            padding: 0;
+            margin-right: 2em;
+        }
+    }
+}
+
+
+
+
+.tronicals-section {
+    padding: 5rem 0;
+    min-height: 100vh;
+    /* min-width: 90vw; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0); 
+  }
+  
+  .tronicals-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 6rem;
+    text-align: center;
+    color: #ffffff;
+    /* background: linear-gradient(to right, #49d7ec, #D52092);  */
+    /* -webkit-background-clip: text; */
+    /* -webkit-text-fill-color: transparent; */
+    margin-bottom: 3rem;
+  }
+  
+  .tronicals-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+  }
+
+@media (max-width: 600px) { /* Adjust breakpoint as needed for mobile screens */
+    .tronicals-grid {
+        grid-template-columns: 1fr; /* Force single-column layout for mobile */
+        gap: 1.5rem; /* Optional: reduce gap slightly for better spacing */
+    }
+}
+
+  
+  .tronicals-card {
+    position: relative;
+    background-color: rgba(24, 22, 53, 0.7);
+    border: 1px solid #49d7ec;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    text-align: center;
+    overflow: hidden; /* Ensures the pseudo-element stays within the card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tronicals-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('eee.svg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    opacity: 0.4; /* Default opacity */
+    z-index: -1; /* Places the image behind the content */
+    transition: opacity 0.3s ease; /* Smooth opacity change */
+}
+
+.tronicals-card:hover::before {
+    opacity: 0.7; /* Opacity on hover */
+}
+
+  
+  .tronicals-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(73, 215, 236, 0.4);
+  }
+  
+  .tronicals-title-card {
+    font-size: 1.8rem;
+    font-family: 'Outfit', sans-serif;
+    color: #ffffff;
+    margin-bottom: 1rem;
+  }
+  
+  .tronicals-description {
+    font-family: 'Roboto', sans-serif;
+    color: #d1d5db;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  

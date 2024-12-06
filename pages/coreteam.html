@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Core Team</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="../css/coreteam.css">
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <a class="header-left" href="about.html">
+                CURRENTS
+            </a>
+
+        <nav class="navBar">
+            <a href="#" class="menu-open hide-desktop">
+                <img src="hamMenu.svg" alt="Open menu">
+            </a>
+            <ul>
+                <li class="hide-desktop">
+                    <a href="#" class="menu-close">
+                        <img src="close.svg" alt="Close menu">
+                    </a>
+                </li>
+                <li><a href="index.html">home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="#">guest lectures</a></li>
+                <li><a href="#">core teams</a></li>
+                <li><a href="#">accommodation</a></li>
+                <li><a href="contact.html">contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+        <main>
+            <section class="coreteam-section" id="coreteam">
+                <div class="wrap">
+                  <h2 class="coreteam-title">Core Team</h2>
+                  <div class="coreteam-grid">
+                    <div class="coreteam-card">
+                      <div class="coreteam-image" style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200&h=200');"></div>
+                      <h3 class="coreteam-name">Member 1</h3>
+                      <p class="coreteam-role">role 1</p>
+                    </div>
+                    <div class="coreteam-card">
+                      <div class="coreteam-image" style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200&h=200');"></div>
+                      <h3 class="coreteam-name">Member 2</h3>
+                      <p class="coreteam-role">role 2</p>
+                    </div>
+                    <div class="coreteam-card">
+                      <div class="coreteam-image" style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200&h=200');"></div>
+                      <h3 class="coreteam-name">Member 3</h3>
+                      <p class="coreteam-role">role 3</p>
+                    </div>
+                    <div class="coreteam-card">
+                      <div class="coreteam-image" style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200&h=200');"></div>
+                      <h3 class="coreteam-name">Member 4</h3>
+                      <p class="coreteam-role">role 4</p>
+                    </div>
+                    
+                  </div>
+                </div>
+              </section>
+        </main>
+    </div>
+    <script>
+        const menu = document.querySelector('nav ul');
+        const menuBtn = document.querySelector('.menu-open');
+        const closeBtn = document.querySelector('.menu-close');
+
+        menuBtn.addEventListener('click', () => {
+            menu.classList.add('open');
+        });
+
+        closeBtn.addEventListener('click', () => {
+            menu.classList.remove('open');
+        });
+    </script>
+</body>
+</html>
