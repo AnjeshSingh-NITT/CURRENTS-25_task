@@ -31,3 +31,9 @@ To get started with this project, follow these steps:
 ## Usage
 To view the project in action, simply open the index.html file in a web browser. The project is designed to be fully responsive and should look great on both desktop and mobile devices.
 
+### Functioning pages:
+1. home
+2. about
+3. tronicals
+4. core team
+
