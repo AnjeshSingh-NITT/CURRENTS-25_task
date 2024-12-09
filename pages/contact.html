@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Currents</title>
+    <title>Currents '25</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="../css/contact.css">
 </head>
 <body>
     
@@ -39,32 +39,21 @@
                 </ul>
             </nav>
         </header>
-
-        <main>
-            <h1>CURRENTS '25</h1>
-            <p class="subhead">
-                The Electrical and Electronics Engineering Association, better known as EEE-A, 
-                is the brainchild of the Department of Electrical and Electronics Engineering. 
-                The EEE-A acts as a bridge between the students and the department. It offers a                 
-                plethora of activities throughout the year that encourage students to gain an 
-                in-depth understanding of the field.  These include guest lectures, workshops, 
-                events and EEE-A’s annual technical symposium, CURRENTS.
-
-                CURRENTS was first incepted in 1990s as a humble affair, by a group of 
-                enthusiastic members of the EEE Association. It has on offer, a plethora of 
-                innovative events, state-of-the-art workshops, the best guest lectures from the 
-                most revered academicians and industrialists, and its bi-annual magazine: TRONICALS.
-            </p>
+    <div class="contact-container">
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you! Please fill out the form below.</p>
+        <form action="#" method="post" class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
             
-        </main>
-
-        <!-- <div class="eee-container">
-            <div class="eee">
-                <img src="eee.svg" alt="eee-A logo">
-                <div class="inner-circle"></div>
-                <div class="outer-circle"></div>
-            </div>
-        </div> -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
     </div>
 
     <script>
@@ -82,5 +71,6 @@
         })
 
     </script>
+
 </body>
 </html>

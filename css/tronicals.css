@@ -81,17 +81,10 @@ nav ul {
     transform: translateX(0%);
 }
 
-/* .container{
-    background-image: url('eee.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center left 20%; 
-    
-    
-} */
+
 .tronicals-section{
-    margin: 2em 2em;
-    padding: 2em 2em;
+    margin: 0em 2em;
+    padding: 0em 2em;
 }
 
 @media (min-width: 798px) {
@@ -148,7 +141,8 @@ nav ul {
 
 
 .tronicals-section {
-    padding: 5rem 0;
+    padding: 0rem 0;
+    margin-top:0;
     min-height: 100vh;
     /* min-width: 90vw; */
     display: flex;
@@ -161,6 +155,10 @@ nav ul {
   .tronicals-title {
     font-family: 'Outfit', sans-serif;
     font-size: 6rem;
+    margin-top: 0em;
+    margin-bottom: 0;
+    padding-top:0;
+    padding-bottom:0;
     text-align: center;
     color: #ffffff;
     /* background: linear-gradient(to right, #49d7ec, #D52092);  */
@@ -246,3 +244,25 @@ nav ul {
     line-height: 1.5;
   }
   
+
+  .button-container {
+    text-align: center;
+}
+
+.subscribe-button {
+    margin-top:0em;
+    margin-bottom:3em;
+    padding: 12px 24px;
+    font-size: 2rem;
+    color: white;
+    background-color: rgba(24, 22, 53, 0.7);
+    border: 1px solid #49d7ec;
+    border-radius: 0.5em;
+    font-family: roboto;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+}
+
+.subscribe-button:hover {
+    background-color:rgba(240, 248, 255, 0.176);
+}
